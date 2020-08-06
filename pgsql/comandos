@@ -1,0 +1,10 @@
+Cargar configuración
+kubectl create -f postgres-configmap.yaml
+Levantando volumen persistente para datos
+kubectl create -f postgres-storage.yaml
+Preparando despliegue
+kubectl create -f postgres-deployment.yaml
+Levantando el servicio
+kubectl create -f postgres-service.yaml
+Conectando al servicio
+kubectl get svc postgres
